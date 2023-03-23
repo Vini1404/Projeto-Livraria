@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewBag.Title = "Cadastrar Livro";
+}
+
+<h2>Cadastrar Livros</h2>
+
+@using (Html.BeginForm("ConfCadLivro", "Livraria", FormMethod.Post, new { enctype = "multipart/form-data" }))
+            {
+                <label>Nome do Livro</label>
+                <br />
+                <input type="text" id="txtNmLivro" name="txtNmLivro" />
+                <br />
+                <br />
+                @Html.DropDownList("autores", "Escolha o Autor")
+                <br />
+                <br />
+                <input type="submit" value="Cadastrar" />
+            }
+<br />
+<br />
+<footer>
+    @Html.ActionLink("Voltar a página inicial", "Index", "Livraria")
+</footer>
+

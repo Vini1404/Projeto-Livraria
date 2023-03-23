@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewBag.Title = "Cadastro Status";
+}
+
+<h2>Cadastro de Status</h2>
+
+@using (Html.BeginForm("ConfCadStatus", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <label>Status</label>
+    <br />
+    <input type="text" id="txtNmStatus" name="txtNmStatus" />
+    <br />
+    <br />
+    <input type="submit" value="Cadastrar" />
+}
+

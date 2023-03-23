@@ -1,0 +1,33 @@
+﻿
+@{
+    ViewBag.Title = "AtStatus";
+}
+
+<h2>Atualizar Status</h2>
+
+@using (Html.BeginForm("AtStatus", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <label>Código do Status</label>
+    <br />
+    <input type="text" id="txtCodStatus" name="txtCodStatus" value="@ViewBag.cod" />
+    <br />
+    <br />
+    <label>Status</label>
+    <br />
+    <input type="text" id="txtNmStatus" name="txtNmStatus" value="@ViewBag.nome" />
+    <br />
+    <br />
+    <input type="submit" value="Buscar" name="btn" />
+    <br />
+    <br />
+    <input type="submit" value="Atualizar" name="btn" />
+    <br />
+    <br />
+    <input type="submit" value="Excluir" name="btn" />
+    <br />
+    <br />
+}
+<br />
+@ViewBag.msg
+
+

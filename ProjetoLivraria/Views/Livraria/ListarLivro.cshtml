@@ -1,0 +1,43 @@
+﻿<link href="~/Content/font-awesome.css" rel="stylesheet" />
+@model IEnumerable<ProjetoLivraria.Models.ModLivro>
+@{
+    ViewBag.Title = "ListarLivro";
+}
+
+<h2>Listar Livro</h2>
+
+<p><i class="fa fa-plus" aria-hidden="true"></i> @Html.ActionLink("Cadastrar Livro", "CadLivro")</p>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.codLivro)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.nomeLivro)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.nomeAutor)
+        </th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelitem => item.codLivro)
+            </td>
+            <td>
+                @Html.DisplayFor(modelitem => item.nomeLivro)
+            </td>
+            <td>
+                @Html.DisplayFor(modelitem => item.nomeAutor)
+            </td>
+            <td>
+                <i class="fa fa-edit" aria-hidden="true"></i> @Html.ActionLink("Editar", "Edit", new {/*id=item.PrimaryKey*/})
+                <i class="fa fa-info" aria-hidden="true"></i> @Html.ActionLink("Detalhes", "Details", new {/*id=item.PrimaryKey*/})
+                <i class="fa fa-trash" aria-hidden="true"></i> @Html.ActionLink("Excluir", "Delete", new {/*id=item.PrimaryKey*/})
+            </td>
+        </tr>
+    }
+</table>
+
