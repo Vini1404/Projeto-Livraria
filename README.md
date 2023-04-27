@@ -1,4 +1,4 @@
-# Projeto-Livraria <img align="center" alt="Vini-Python" height="40" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg"> 
+# Projeto-Livraria <img align="center" alt="Vini-Csharp" height="40" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg"> 
 
 Este é um projeto de uma livraria feito em ASP.NET MVC. O objetivo é criar um sistema que permita a gestão de livros e clientes de uma livraria, possibilitando o cadastro, a edição, a exclusão e a busca de informações sobre esses dados.
 
@@ -7,10 +7,8 @@ Antes de iniciar, é necessário ter instalado em sua máquina:
 
 * .NET Framework 4.7.2 ou superior
 * Visual Studio
-* Para utilizar o projeto, siga os passos abaixo:
-* Projeto desenvolvido em ASP.NET na Etec Prof Basilides de Godoy
 
-Para utilizar o projeto, siga os passos abaixo:
+## Para utilizar o projeto, siga os passos abaixo:
 
 1. Clone o repositório em sua máquina:
 ```
